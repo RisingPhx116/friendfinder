@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Link static CSS -->
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
 <body>
@@ -167,7 +167,8 @@
 
 <script type="text/javascript">
 	$("#submitBtn").on("click", function(event) {
-		event.preventDefault();
+        event.preventDefault();
+        console.log("Submit button clicked")
 		// Form validation
 		var valid = true;
 		if($("#name").val() === "" || $("#photo").val() === "") {
